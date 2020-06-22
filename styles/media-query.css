@@ -1,0 +1,135 @@
+@media screen and (max-width:768px){
+    main {
+        display: grid;
+        grid-template-columns: 216px auto;
+    }
+    .main__menu-left {
+        padding: 12px 20px 0 17px;
+    }
+    .comments-and-suggestions {
+        display: grid;
+        grid-template-columns: 316px auto;
+    }
+    .video__details--label {
+        display: grid;
+        grid-template-columns: 285px auto;
+    }
+    .video__details--label .play {
+        padding-right: 30px;
+    }
+    .video__details--label .label a {
+        padding: 4px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    /*----changes of menu lefth*/
+    main {
+        position: relative;
+    }
+    .main__menu-left{
+        position: absolute;
+        z-index: 3;
+        right: 768px;
+        bottom: 0;
+        top: 0;
+        background-color: #151b31f7;
+    }
+    .main__menu-left .playlist {
+        padding-right: 55%;
+    }
+    .main__menu-left .playlist h1 {
+        margin-top: 30px;
+    }
+    .main__menu-left.is-active {
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    .icon-menu {
+        display: block;
+        z-index: 4;
+    }
+}
+@media screen and (max-width:480px) {
+    .main__menu-left .playlist {
+        padding-right: 0;
+    }
+    .comments-and-suggestions {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 0 15px;
+    }
+    .video__details--label {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 45px;
+    }
+    .comments {
+        padding-left: 0;
+    }
+    .video__details--label .label a {
+        padding: 4px;
+        margin-right: 10px;
+    }
+    .video__details--label .play a p {
+        font-size: 16px;
+    }
+    .comments-and-suggestions .suggestions--title,
+    .comments--title {
+        font-size: 22px;
+    }
+    .comments .comments--input input {
+        height: 40px;
+        font-size: 18px;
+    }
+    .comments .comments--input img {
+        width: 35px;
+        height: 35px;
+    }
+    .comments .comments--comment .text {
+        font-size: 19px;
+    }
+    .icon {
+        height: 42px;
+        width: 42px;
+    }
+    .suggestions {
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .suggestions .suggestion {
+        height: auto;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .suggestions .img-container {
+        width: 300px;
+        height: 160px;
+        margin-bottom: 5px;
+    }
+    .suggestions .img-container img{
+        width: 300px;
+    }
+    .video__details--label .play .add {
+        font-size: 16px;
+    }
+    .video__details--text p {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .video__details--label .play {
+        padding-right: 20px;
+    }
+    .video__details--label .label a {
+        padding: 4px;
+        font-size: 16px;
+    }
+    .comments-and-suggestions {
+        margin: 0px 5px;
+    }
+}

@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main {
+    display:grid;
+    grid-template-columns: 300px auto;
+}
+.main__menu-left {
+    color: white;
+    background-color: #151b31;
+    padding: 12px 30px 26px 17px;
+}
+.main__menu-left .playlist .logo-platzi-video {
+    text-decoration: none;
+}
+.main__menu-left .playlist h1 {
+    font-size: 25px;
+    font-size: 40px;
+    margin: 10px 0;
+}
+.main__menu-left .playlist h1 strong {
+    color: #e72831;
+}
+.main__menu-left .playlist__my ol {
+    padding: 0 0 0 18px;
+}
+.main__menu-left .playlist ol li {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.main__menu-left a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.playlist__my--title, .playlist__friends--title {
+    font-size: 19px;
+    margin-bottom: -7px;
+}
+.playlist__friends ol {
+    padding-left: 0;
+}
+.playlist__friends a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.playlist__friends a p {
+    margin: 8px 14px;
+}
+.icon {
+    height: 35px;
+    object-fit: cover;
+    width: 35px;
+    border-radius: 50%;
+}
+.main__menu-left a:hover {
+    text-decoration: underline;
+}
+/*------ main__principal------------*/
+.main__principal {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.main__principal .video {
+    display: grid;
+    grid-template-rows: 315px auto;
+    border-bottom: 1px solid #cecfce;
+    padding-bottom: 20px;
+}
+.video__container {
+    width: 100%;
+    position: relative;
+}
+.video__container .youtube-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.video__details {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 15px;
+    margin-top: 28px 0;
+}
+.video__details--text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+.video__details--text p {
+    margin: 0;
+    font-size: 18px;
+}
+.video__details--text span {
+   color: #605d5d;
+}
+.video__details--label {
+    display: grid;
+    grid-template-columns: 341px auto;
+}
+.video__details--label .play {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 70px;
+}
+.video__details--label .play .add {
+    background: linear-gradient(to right, #e72831, #f38f8f);
+    border: 1px solid #e72831;
+    color:white;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    height: 20px;
+    font-size: 15px;
+}
+.video__details--label .play a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.video__details--label .play a p {
+    font-size: 12px;
+    margin: 2px 0;
+}
+.video__details--label .label {
+    align-self: center;
+}
+.video__details--label .label a {
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 13px;
+    text-decoration: none;
+}
+.video__details--label .label--programming {
+    background-color: chartreuse;
+}
+.video__details--label .label--education {
+    background-color: palevioletred;
+}
+.video__details--label .label--thing {
+    background-color: cadetblue;
+}
+.comments-and-suggestions {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+.comments {
+    padding-left: 20px;
+}
+.comments .comments--input{
+    width: auto;
+    padding: 0 2px;
+    border-radius: 10px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.comments .comments--input img {
+    width: 30px;
+    height: 30px;
+}
+.comments .comments--input input {
+    width: 80%;
+    background-color: #f2f2f2;
+    height: 32px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+}
+.comments .comments--comment {
+    display: flex;
+    align-items: center;
+    margin: 11px 0;
+}
+.comments .comments--comment .text {
+    display: flex;
+    flex-direction: column;
+}
+.comments .comments--comment .text p {
+    margin: 0 3px;
+}
+.suggestions {
+    margin-left: 5%;
+}
+.suggestions .suggestion {
+    width: 200px;
+    height: 165px;
+}
+.suggestions .img-container {
+    overflow: hidden;
+    width: 200px;
+    height: 120px;
+}
+.suggestions .suggestion img {
+    width: 200px;
+    object-fit: cover;
+}
+.suggestions .suggestion p {
+    margin: 0;
+}
+.icon-menu {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    display: none;
+}
+.suggestions .suggestion a {
+    color: black;
+    text-decoration: none;
+}
